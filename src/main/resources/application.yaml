@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: https://github.com/zphoenixz/41670-config-properties
+          clone-on-start: true
+          default-label: main
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 8080
+
+
