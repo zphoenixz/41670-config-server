@@ -10,11 +10,6 @@ spring:
           clone-on-start: true
           default-label: main
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 server:
   port: 8080
 
